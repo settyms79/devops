@@ -3,7 +3,8 @@ node()
     
     stage("init")
     {
-    	git url: 'https://github.com/settyms79/devops.git'
-    	bat 'mvn clean package'
+    	echo "process App Name is ${params.ProcessAppName}"
+    	echo "trackName  is ${params.TrackName}"
+    	echo "trackName  is ${params.Environment}" 
     }
 }
