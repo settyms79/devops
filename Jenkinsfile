@@ -1,14 +1,9 @@
-pipeline
+node()
 {
-	agent any
-	stages
-	{
-		stage("init")
-		{
-			steps
-			{
-				bat 'mvn clean compile'
-			}
-		}
-	}
+    
+    stage("init")
+    {
+    	git url: 'https://github.com/settyms79/devops.git'
+    	bat 'mvn clean package'
+    }
 }
