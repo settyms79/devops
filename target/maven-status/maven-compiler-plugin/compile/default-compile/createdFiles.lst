@@ -1,0 +1,5 @@
+bpm\debops\App.class
+bpm\debops\GreetingController.class
+bpm\debops\ReturnInfo.class
+bpm\debops\Greeting.class
+bpm\debops\BpmSnapshotDeployControl.class
